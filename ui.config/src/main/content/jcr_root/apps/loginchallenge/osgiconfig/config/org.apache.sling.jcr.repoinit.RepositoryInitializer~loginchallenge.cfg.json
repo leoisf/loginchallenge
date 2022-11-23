@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/loginchallenge",
+        "create path (nt:unstructured) /content/dam/loginchallenge/jcr:content",
+        "set properties on /content/dam/loginchallenge/jcr:content\n  set cq:conf{String} to /conf/loginchallenge\n  set jcr:title{String} to \"Login Challenge\"\nend"
+    ]
+}
