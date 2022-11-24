@@ -1,0 +1,53 @@
+{
+  "project-settings": {
+    "code-owner": "Login Challenge",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "loginchallenge",
+    "model-interface-pkg": "com.loginchallenge.core.models",
+    "model-impl-pkg": "com.loginchallenge.core.models.impl"
+  },
+  "name": "loginchallengehome",
+  "title": "Login Challenge Home",
+  "group": "Login Challenge - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": [
+      "request"
+    ],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "image",
+        "type": "image",
+        "json-expose": true,
+        "label": "Select an image"
+      },
+      {
+        "field": "title",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "text",
+        "label": "Insert a Text"
+      },
+      {
+        "field": "button",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "text",
+        "label": "Insert a Button Text"
+      }      
+    ]
+  }
+}

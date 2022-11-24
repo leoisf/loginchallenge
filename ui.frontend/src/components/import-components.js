@@ -46,9 +46,14 @@ import {
     SeparatorV1,SeparatorV1IsEmptyFn,
     ListV2,ListV2IsEmptyFn
 } from '@adobe/aem-core-components-react-base';
+import LoginChallengeHome from './LoginChallengeHome/LoginChallengeHome';
+
 
 //lazyload / code splitting example of an internal component
 const LazyTextComponent = withAsyncImport(() => import(`./Text/Text`));
+
+const loginChallengeHome = withAsyncImport(() => import(`./LoginChallengeHome/LoginChallengeHome`));
+
 
 //lazyload / code splitting examples of external components
 const TitleV2 = withAsyncImport(() => import(`@adobe/aem-core-components-react-base/dist/authoring/title/v2/TitleV2`));
@@ -74,6 +79,8 @@ MapTo('loginchallenge/components/tabs')(TabsV1, {isEmpty: TabsV1IsEmptyFn});
 MapTo('loginchallenge/components/accordion')(AccordionV1, {isEmpty: AccordionV1IsEmptyFn});
 MapTo('loginchallenge/components/carousel')(CarouselV1, {isEmpty: CarouselV1IsEmptyFn});
 MapTo('loginchallenge/components/container')(ContainerV1, {isEmpty: ContainerV1IsEmptyFn});
+
+MapTo('loginchallenge/components/loginchallengehome')(LoginChallengeHome);
 
 
 //lazy load of internal component (hello world)
