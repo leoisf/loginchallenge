@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.loginchallenge.core.models",
     "model-impl-pkg": "com.loginchallenge.core.models.impl"
   },
-  "name": "loginchallengehome",
-  "title": "Login Challenge Home",
+  "name": "loginchallengelogin",
+  "title": "Login Challenge Login",
   "group": "Login Challenge - Content",
   "type": "components",
   "options": {
