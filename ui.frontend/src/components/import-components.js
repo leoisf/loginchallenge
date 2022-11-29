@@ -46,6 +46,7 @@ import {
 } from '@adobe/aem-core-components-react-base';
 import LoginChallengeHome from './LoginChallengeHome/LoginChallengeHome';
 import LoginChallengeLogin from './LoginChallengeLogin/LoginChallengeLogin';
+import LoginChallengeHomeHeader from './LoginChallengeHomeHeader/LoginChallengeHomeHeader';
 
 
 //lazyload / code splitting example of an internal component
@@ -53,6 +54,8 @@ const LazyTextComponent = withAsyncImport(() => import(`./Text/Text`));
 
 const loginChallengeHome = withAsyncImport(() => import(`./LoginChallengeHome/LoginChallengeHome`));
 const loginChallengeLogin = withAsyncImport(() => import('./LoginChallengeLogin/LoginChallengeLogin'));
+const loginChallengeHomeHeader = withAsyncImport(() => import(`./LoginChallengeHomeHeader/LoginChallengeHomeHeader`));
+
 
 
 //lazyload / code splitting examples of external components
@@ -81,6 +84,9 @@ MapTo('loginchallenge/components/carousel')(CarouselV1, {isEmpty: CarouselV1IsEm
 
 MapTo('loginchallenge/components/loginchallengehome')(LoginChallengeHome);
 MapTo('loginchallenge/components/loginchallengelogin')(LoginChallengeLogin);
+MapTo('loginchallenge/components/loginchallengehomeheader')(LoginChallengeHomeHeader);
+
+
 
 
 //lazy load of internal component (hello world)

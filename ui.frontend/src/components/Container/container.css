@@ -1,0 +1,26 @@
+.loginchallenge-cantainer {
+  background-color: white;
+}
+.loginchallenge-cantainer--flex {
+  display: flex;
+}
+.loginchallenge-cantainer--block {
+  display: block;
+}
+
+.loginchallenge-cantainer--center {
+  justify-content: center;
+}
+.loginchallenge-cantainer--left {
+  justify-content: left;
+}
+.loginchallenge-cantainer--right {
+  justify-content: right;
+}
+.loginchallenge-cantainer--space-between {
+  justify-content: space-between;
+}
+.loginchallenge-cantainer--space-around {
+  justify-content: space-around;
+}
+

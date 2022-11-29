@@ -1,11 +1,24 @@
 import React  from "react"
-import Container from "../Container/Container.styled";
+import { Container } from "../Container/Container";
+import { Button } from '../Button/Button';
+import { createGlobalStyle } from "styled-components";
 
-
+export const GlobalStyle = createGlobalStyle`
+  * {
+    html, body {
+      margin:0;
+      padding:0
+    }
+    .page{
+      max-width: 100%;
+    }
+  }
+`
 export interface LoginChallengeLoginProps {
     image: {src: string},
     title: string;
-    button: string; } 
+    button: string; 
+   } 
 
 export const LoginChallengeLoginEditConfig = {
 
@@ -21,17 +34,22 @@ export const LoginChallengeLoginEditConfig = {
 
  }: LoginChallengeLoginProps ): JSX.Element => { 
    
-    return <Container displayFlex>
-
-      <div> 
+    return (
+    <Container flex>
+      <Container>  
          <h1> {title} </h1>
-         <button>{button}</button>
-      </div>
+         <form>
+            <input type="text" />
+            <input type="text" />
+         </form>
+         <Button primary label={button}></Button> 
+      </Container>
+     
+      <Container>
+         <img src={image.src}/>         
+      </Container>
 
-      <div><img src={image.src}></img></div>
-
-   
-    </Container>
+    </Container>)
  }
 
  export default LoginChallengeLogin;

@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.loginchallenge.core.models",
     "model-impl-pkg": "com.loginchallenge.core.models.impl"
   },
-  "name": "loginchallengelogin",
-  "title": "Login Challenge Login",
+  "name": "loginchallengehomeheader",
+  "title": "Login Challenge Home - header",
   "group": "Login Challenge - Content",
   "type": "components",
   "options": {
@@ -33,21 +33,7 @@
         "type": "image",
         "json-expose": true,
         "label": "Select an image"
-      },
-      {
-        "field": "title",
-        "type": "textfield",
-        "json-expose": true,
-        "json-property": "text",
-        "label": "Insert a Text"
-      },
-      {
-        "field": "button",
-        "type": "textfield",
-        "json-expose": true,
-        "json-property": "text",
-        "label": "Insert a Button Text"
-      }      
+      }    
     ]
   }
 }
