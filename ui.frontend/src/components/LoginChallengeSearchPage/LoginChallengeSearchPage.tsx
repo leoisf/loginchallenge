@@ -1,6 +1,6 @@
 import React  from "react"
 import { Container } from '../Container/Container';
-import SearchPage from "../SearchPage/SearchPage";
+import GitUsersSearch from "../GitUsersSearch/GitUsersSearch";
 
 export interface LoginChallengeSearchPageProps { 
    title_page: string;
@@ -24,7 +24,7 @@ export const LoginChallengeSearchPageEditConfig = {
          <h1>{title_page}</h1>
          <h2>{sub_title}</h2>
          <button>{search_button}</button>
-         <SearchPage> </SearchPage>
+         <GitUsersSearch> </GitUsersSearch>
       </Container>
       <Container>
       <img src={image_template.src}/>

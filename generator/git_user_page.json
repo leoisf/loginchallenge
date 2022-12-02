@@ -8,7 +8,7 @@
     "model-interface-pkg": "com.loginchallenge.core.models",
     "model-impl-pkg": "com.loginchallenge.core.models.impl"
   },
-  "name": "loginchallengegithubuserpage",
+  "name": "loginchallengegituserpage",
   "title": "Login Challenge Github User Page",
   "group": "Login Challenge - Content",
   "type": "components",
@@ -35,7 +35,6 @@
         "json-property": "text",
         "label": "Search button text"
       }
-      
     ]
   }
 }
