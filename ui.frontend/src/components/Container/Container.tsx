@@ -17,7 +17,7 @@ interface ContainerProps {
       flex = false,
       justify_content = 'left',
       ...props
-  }: ContainerProps) => {
+  }: ContainerProps): JSX.Element => {
     const mode = flex ? 'loginchallenge-cantainer--flex' : 'loginchallenge-cantainer--block';
     return (
       <div

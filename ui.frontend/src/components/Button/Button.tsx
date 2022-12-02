@@ -2,6 +2,7 @@ import React from 'react';
 import './button.css';
 
 interface ButtonProps {
+  children: React.ReactNode;
   /**
    * Is this the principal call to action on the page?
    */
@@ -21,6 +22,8 @@ interface ButtonProps {
   /**
    * Optional click handler
    */
+  type?: "button" | "submit" | "reset";
+
   onClick?: () => void;
 }
 
@@ -46,4 +49,4 @@ export const Button = ({
     </button>
   );
 };
-
+export default Button;

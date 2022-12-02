@@ -3,14 +3,14 @@ import axios from "axios";
 import { Container } from "../Container/Container";
 
 export interface WeatherProps {
-   name: string,
-   weather:{
+   name?: string,
+   weather?:{
        icon: string,
    }
-   sys:{
+   sys?:{
       country: string,
    }
-   main:{
+   main?:{
       temp: Number,
    }
 }

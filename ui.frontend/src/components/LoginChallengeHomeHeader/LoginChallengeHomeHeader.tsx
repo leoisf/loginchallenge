@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react"
-import { Container } from "../Container/Container";
+import Clock from "../Clock/Clock";
+import { Container } from '../Container/Container';
+import Weather from "../Weather/Weather";
 
 
 export interface LoginChallengeHomeHeaderProps {
@@ -20,9 +22,16 @@ export const LoginChallengeHomeHeaderEditConfig = {
  }: LoginChallengeHomeHeaderProps ): JSX.Element => { 
    return (
       <Container flex justify_content="space-between">
-         <Container>
-            <img src={image.src}/> 
+         
+         <img src={image.src}/> 
+         
+         <Container justify_content="center" > 
+         <Clock></Clock>
          </Container>
+         
+
+         <Weather></Weather>
+
       </Container>
       )
 }

@@ -3,21 +3,19 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import  Weather  from './Weather'
+import  Counter  from './Counter'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'LoginChallenge/Weather',
-  component: Weather,
+  title: 'LoginChallenge/Counter',
+  component: Counter,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 
-} as ComponentMeta<typeof Weather>;
+} as ComponentMeta<typeof Counter>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Weather> = (args) => <Weather {...args} />;
+const Template: ComponentStory<typeof Counter> = (args) => <Counter {...args} />;
 
-export const Default = Weather.bind({});
+export const Default = Counter.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-//Weather.args = {
-//};
 

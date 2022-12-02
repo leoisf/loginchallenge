@@ -47,7 +47,8 @@ import {
 import LoginChallengeHome from './LoginChallengeHome/LoginChallengeHome';
 import LoginChallengeLogin from './LoginChallengeLogin/LoginChallengeLogin';
 import LoginChallengeHomeHeader from './LoginChallengeHomeHeader/LoginChallengeHomeHeader';
-
+import LoginChallengeHomeFooter from './LoginChallengeHomeFooter/LoginChallengeHomeFooter';
+import LoginChallengeSearchPage from './LoginChallengeSearchPage/LoginChallengeSearchPage';
 
 //lazyload / code splitting example of an internal component
 const LazyTextComponent = withAsyncImport(() => import(`./Text/Text`));
@@ -55,13 +56,12 @@ const LazyTextComponent = withAsyncImport(() => import(`./Text/Text`));
 const loginChallengeHome = withAsyncImport(() => import(`./LoginChallengeHome/LoginChallengeHome`));
 const loginChallengeLogin = withAsyncImport(() => import('./LoginChallengeLogin/LoginChallengeLogin'));
 const loginChallengeHomeHeader = withAsyncImport(() => import(`./LoginChallengeHomeHeader/LoginChallengeHomeHeader`));
-
-
+const loginChallengeHomeFooter = withAsyncImport(() => import(`./LoginChallengeHomeFooter/LoginChallengeHomeFooter`));
+const loginChallengeSearchPage = withAsyncImport(() => import('./LoginChallengeSearchPage/LoginChallengeSearchPage'));
 
 //lazyload / code splitting examples of external components
 const TitleV2 = withAsyncImport(() => import(`@adobe/aem-core-components-react-base/dist/authoring/title/v2/TitleV2`));
 const CarouselV1 = withAsyncImport(() => import(`@adobe/aem-core-components-react-spa/dist/container/carousel/v1/CarouselV1`));
-
 
 MapTo('loginchallenge/components/download')(DownloadV1, {isEmpty: DownloadV1IsEmptyFn});
 MapTo('loginchallenge/components/list')(ListV2, {isEmpty: ListV2IsEmptyFn});
@@ -85,6 +85,8 @@ MapTo('loginchallenge/components/carousel')(CarouselV1, {isEmpty: CarouselV1IsEm
 MapTo('loginchallenge/components/loginchallengehome')(LoginChallengeHome);
 MapTo('loginchallenge/components/loginchallengelogin')(LoginChallengeLogin);
 MapTo('loginchallenge/components/loginchallengehomeheader')(LoginChallengeHomeHeader);
+MapTo('loginchallenge/components/loginchallengehomefooter')(LoginChallengeHomeFooter);
+MapTo('loginchallenge/components/loginchallengesearchpage')(LoginChallengeSearchPage);
 
 
 
