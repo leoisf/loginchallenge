@@ -5,7 +5,7 @@ import  LoginChallengeLogin  from './LoginChallengeLogin'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'LoginChallenge/LoginPage',
+  title: 'LoginChallenge/LoginChallengeLogin',
   component: LoginChallengeLogin,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 

@@ -40,15 +40,16 @@ export interface WeatherProps {
         getWeather(position.coords.latitude, position.coords.longitude).then( (data) => {
          setLocation(true);
          setWeather(data);
-         ic=data.weather[0].icon;
+         // ic=data?.weather[0].icon;
          // icon = `http://openweathermap.org/img/wn/${ 
-         // weather.weather[0].icon}.png`;
+         //    data?.weather[0].icon}.png`;
         });
         
       })
     }, [])
 
-    icon = 'http://openweathermap.org/img/wn/04d.png'
+    const getWeatherIcon = (icon: string) => `http://openweathermap.org/img/wn/${icon}@2x.png`;
+
 
 console.log(icon);
 
@@ -58,8 +59,8 @@ console.log(icon);
          <h1>{weather.name}</h1>
          <sup>{weather.sys?.country}</sup>
          <Container>
-         <img src={icon}/>
-          <span>{Math.round(weather.main?.temp)}<sup>°C</sup></span>
+            <img src={getWeatherIcon(weather?.weather?.[0].icon)}/>
+            <span>{Math.round(weather.main?.temp)}<sup>°C</sup></span>
          </Container>
          </Container>
       </Container>

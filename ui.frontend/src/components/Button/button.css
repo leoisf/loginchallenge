@@ -10,6 +10,14 @@
 .loginchallenge-button--primary {
   color: white;
   background-color: #1ea7fd;
+  background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
 }
 .loginchallenge-button--secondary {
   color: #333;

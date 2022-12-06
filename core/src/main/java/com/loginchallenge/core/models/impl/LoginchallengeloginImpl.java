@@ -43,19 +43,16 @@ public class LoginchallengeloginImpl
     implements Loginchallengelogin
 {
 
-    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private Image image;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String title;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String sub_title;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String button;
+    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private Image image;
     @SlingObject
     private Resource resource;
-
-    @Override
-    public Image getImage() {
-        return image;
-    }
 
     @Override
     @JsonProperty("title")
@@ -64,9 +61,20 @@ public class LoginchallengeloginImpl
     }
 
     @Override
+    @JsonProperty("sub_title")
+    public String getSub_title() {
+        return sub_title;
+    }
+
+    @Override
     @JsonProperty("button")
     public String getButton() {
         return button;
+    }
+
+    @Override
+    public Image getImage() {
+        return image;
     }
 
     @Override

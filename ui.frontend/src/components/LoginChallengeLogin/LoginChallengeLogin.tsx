@@ -1,24 +1,17 @@
-import React  from "react"
+import React, { Fragment }  from "react"
 import { Container } from "../Container/Container";
 import { Button } from '../Button/Button';
-import { createGlobalStyle } from "styled-components";
+import { GlobalStyle } from "../GlobalStyle/GlobalStyle";
+import Input from "../Input/Input";
+import './LoginChallengeLogin.scss';
 
-export const GlobalStyle = createGlobalStyle`
-  * {
-    html, body {
-      margin:0;
-      padding:0
-    }
-    .page{
-      max-width: 100%;
-    }
-  }
-`
+
 export interface LoginChallengeLoginProps {
-    image: {src: string},
     title: string;
-    button: string; 
-   } 
+    sub_title: string;
+    button: string;
+    image: {src: string},
+} 
 
 export const LoginChallengeLoginEditConfig = {
 
@@ -29,27 +22,39 @@ export const LoginChallengeLoginEditConfig = {
  }
 
  const LoginChallengeLogin = ({
-
-    title="inseria um título", button="botão", image={src:""},
-
+    title="Olá,", 
+    sub_title="Para continuar navegando de forma segura, efetue o login na rede.", 
+    button="Continuar", 
+    image={src:"/assets/image2.png"},
  }: LoginChallengeLoginProps ): JSX.Element => { 
    
     return (
-    <Container flex>
-      <Container>  
-         <h1> {title} </h1>
-         <form>
-            <input type="text" />
-            <input type="text" />
-         </form>
-         <Button primary label={button}></Button> 
-      </Container>
-     
-      <Container>
-         <img src={image.src}/>         
-      </Container>
+      <Container className="login-container">
+         <GlobalStyle />
+         <Container flex>
 
-    </Container>)
+            <Container className="login-content-info" >
+               <Container className="login-content-info-wrapper" > 
+               <div className="login-title" >
+                  <h1> {title} </h1>  
+                  <h2> {sub_title}</h2>                
+               </div>  
+               <form className="login-form">
+                  <span>Login</span>
+                  <Input type="text" placeholder="User" />
+                  <i className="users" aria-hidden="true"style={{ position: 'absolute', left: 6 }}
+              />
+                  <Input type="password" placeholder="Password"/>
+                  <Button primary label={button} type="submit"> </Button> 
+               </form>
+               </Container>
+            </Container>
+
+            <Container className="login-content-img" style={{ backgroundImage: `url(${image.src})`}} >
+            </Container>
+
+         </Container>
+      </Container>
+    )
  }
-
  export default LoginChallengeLogin;

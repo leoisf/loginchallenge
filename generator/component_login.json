@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.loginchallenge.core.models",
     "model-impl-pkg": "com.loginchallenge.core.models.impl"
   },
-  "name": "loginchallengegithubuserpage",
-  "title": "Login Challenge Github User Page",
+  "name": "loginchallengelogin",
+  "title": "Login Challenge Login Page",
   "group": "Login Challenge - Content",
   "type": "components",
   "options": {
@@ -29,14 +29,7 @@
     "generic-javadoc": false,
     "properties": [
       {
-        "field": "back_button",
-        "type": "textfield",
-        "json-expose": true,
-        "json-property": "text",
-        "label": "Search button text"
-      },
-      {
-        "field": "title_page",
+        "field": "title",
         "type": "textfield",
         "json-expose": true,
         "json-property": "text",
@@ -48,6 +41,19 @@
         "json-expose": true,
         "json-property": "text",
         "label": "Sub Title text"
+      },
+      {
+        "field": "button",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "text",
+        "label": "Button text"
+      },
+      {
+        "field": "image",
+        "type": "image",
+        "json-expose": true,
+        "label": "Template Image"
       }
       
     ]

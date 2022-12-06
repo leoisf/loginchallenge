@@ -36,7 +36,7 @@ export const Button = ({
   backgroundColor,
   label,
   ...props
-}: ButtonProps) => {
+}: ButtonProps): JSX.Element => {
   const mode = primary ? 'loginchallenge-button--primary' : 'loginchallenge-button--secondary';
   return (
     <button

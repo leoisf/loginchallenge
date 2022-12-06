@@ -13,12 +13,15 @@ import { Container } from "../Container/Container";
    <Container flex justify_content="center" >
       <Container>
          <Container flex justify_content="center">
-            {currentTime.toLocaleTimeString('pt-br', {  
-               timeZone: 'America/Sao_Paulo', 
-               hourCycle: 'h23',
-               hour: '2-digit', 
-               minute:'2-digit'
-            })}
+            {
+               currentTime.toLocaleTimeString('pt-br', 
+               {  
+                  timeZone: 'America/Sao_Paulo', 
+                  hourCycle: 'h23',
+                  hour: '2-digit', 
+                  minute:'2-digit'
+               })
+            }
          </Container>
          <Container>
             {currentTime.toLocaleDateString('pt-Br',{ dateStyle: 'full' } )}
