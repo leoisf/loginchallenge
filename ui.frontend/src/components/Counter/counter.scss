@@ -1,0 +1,27 @@
+.counter-container{
+  background: transparent;
+
+
+  .counter-content-count{
+      background: transparent;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+  .counter-content-text{
+    background: transparent;
+    width: 94px;
+    text-align: center;
+  }
+
+ 
+    //mobile
+    @media (max-width: 768px) {
+   
+    }
+
+}

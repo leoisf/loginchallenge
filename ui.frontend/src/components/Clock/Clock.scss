@@ -1,0 +1,30 @@
+.clock-container{
+  .clock-time-content{
+    span{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 144px;
+      text-align: center;
+    }
+  }
+  .clock-date-content{
+    span{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: -30px;
+    }
+  }
+
+  display: flex;
+    justify-content: center;
+
+  //mobile
+  @media (max-width: 768px) {
+    display: none;   
+  }
+
+}

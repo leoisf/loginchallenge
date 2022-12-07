@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Container } from "../Container/Container";
+import "./counter.scss"
 
 type ClockProps = {
    children: React.ReactNode;
@@ -14,9 +15,12 @@ type ClockProps = {
   }, [counter]);
 
   return (
-    <div className="App">
-      <div>Countdown: {counter}</div>
-    </div>
+    <Container className="counter-container">
+      <Container className="counter-content-count"> 
+        <span> {counter} </span> </Container>
+      <Container className="counter-content-text"> 
+        <span> seconds </span> </Container>
+    </Container>
   );
 };
 export default Clock;

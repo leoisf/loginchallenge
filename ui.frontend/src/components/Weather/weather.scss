@@ -1,0 +1,29 @@
+.weather-container{
+  .weather-content-locate{
+    span{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  .weather-content-info{
+    img{
+      width: 34px;
+    }
+    span{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 72px;
+    }
+  }
+
+  //mobile
+  @media (max-width: 768px) {
+   
+  }
+
+}

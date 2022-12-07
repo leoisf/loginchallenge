@@ -31,8 +31,5 @@ import org.osgi.annotation.versioning.ConsumerType;
 public interface Loginchallengehomeheader
     extends ComponentExporter
 {
-
-
     Image getImage();
-
 }

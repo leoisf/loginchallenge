@@ -43,30 +43,46 @@ public class LoginchallengehomeImpl
     implements Loginchallengehome
 {
 
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String text1;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String text2;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String text3;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String text4;
     @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Image image;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String title;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String button;
     @SlingObject
     private Resource resource;
 
     @Override
+    @JsonProperty("text1")
+    public String getText1() {
+        return text1;
+    }
+
+    @Override
+    @JsonProperty("text2")
+    public String getText2() {
+        return text2;
+    }
+
+    @Override
+    @JsonProperty("text3")
+    public String getText3() {
+        return text3;
+    }
+
+    @Override
+    @JsonProperty("text4")
+    public String getText4() {
+        return text4;
+    }
+
+    @Override
     public Image getImage() {
         return image;
-    }
-
-    @Override
-    @JsonProperty("title")
-    public String getTitle() {
-        return title;
-    }
-
-    @Override
-    @JsonProperty("button")
-    public String getButton() {
-        return button;
     }
 
     @Override

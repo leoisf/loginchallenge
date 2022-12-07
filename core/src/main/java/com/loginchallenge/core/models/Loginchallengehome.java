@@ -34,12 +34,18 @@ public interface Loginchallengehome
 {
 
 
+    @JsonProperty("text1")
+    String getText1();
+
+    @JsonProperty("text2")
+    String getText2();
+
+    @JsonProperty("text3")
+    String getText3();
+
+    @JsonProperty("text4")
+    String getText4();
+
     Image getImage();
-
-    @JsonProperty("title")
-    String getTitle();
-
-    @JsonProperty("button")
-    String getButton();
 
 }

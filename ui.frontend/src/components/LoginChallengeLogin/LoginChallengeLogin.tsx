@@ -25,11 +25,12 @@ export const LoginChallengeLoginEditConfig = {
     title="Olá,", 
     sub_title="Para continuar navegando de forma segura, efetue o login na rede.", 
     button="Continuar", 
-    image={src:"/assets/image2.png"},
+    image={src:"/assets/image2.png"
+   },
  }: LoginChallengeLoginProps ): JSX.Element => { 
    
     return (
-      <Container className="login-container">
+      <Container justify_content="space-between" className="login-container">
          <GlobalStyle />
          <Container flex>
 

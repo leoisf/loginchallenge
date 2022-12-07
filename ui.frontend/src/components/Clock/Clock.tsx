@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Container } from "../Container/Container";
+import "./Clock.scss"
 
  const Clock = ({
  }): JSX.Element => {
@@ -10,21 +11,25 @@ import { Container } from "../Container/Container";
  }, []);
  
  return (
-   <Container flex justify_content="center" >
+   <Container className="clock-container" flex justify_content="center" >
       <Container>
-         <Container flex justify_content="center">
-            {
-               currentTime.toLocaleTimeString('pt-br', 
-               {  
-                  timeZone: 'America/Sao_Paulo', 
-                  hourCycle: 'h23',
-                  hour: '2-digit', 
-                  minute:'2-digit'
-               })
-            }
+         <Container className="clock-time-content" flex justify_content="center">
+            <span>
+               {
+                  currentTime.toLocaleTimeString('pt-br', 
+                  {  
+                     timeZone: 'America/Sao_Paulo', 
+                     hourCycle: 'h23',
+                     hour: '2-digit', 
+                     minute:'2-digit'
+                  })
+               }   
+            </span>
          </Container>
-         <Container>
-            {currentTime.toLocaleDateString('pt-Br',{ dateStyle: 'full' } )}
+         <Container className="clock-date-content" flex justify_content="center">
+            <span>
+               {currentTime.toLocaleDateString('pt-Br',{ dateStyle: 'full' } )}
+            </span>
          </Container>
       </Container>
    </Container>

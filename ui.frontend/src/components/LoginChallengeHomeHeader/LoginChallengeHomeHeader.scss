@@ -1,0 +1,23 @@
+.home-header-container{
+  background: transparent;
+    .home-header-content-logo{
+      background: transparent;
+      img{
+      padding: 20px;
+    }
+  }
+  .home-header-content-weather{
+    padding: 25px;
+  }
+
+  //mobile
+  @media (max-width: 768px) {
+    
+    .home-header-content-logo{
+      img{
+      width: 240px;
+      padding: 0;
+    }
+  }
+}
+}

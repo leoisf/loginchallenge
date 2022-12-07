@@ -23,4 +23,4 @@
           xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
           componentGroup="Login Challenge - Content"
           jcr:primaryType="cq:Component"
-          jcr:title="Login Challenge Home"/>
+          jcr:title="Login Challenge Home Page"/>
