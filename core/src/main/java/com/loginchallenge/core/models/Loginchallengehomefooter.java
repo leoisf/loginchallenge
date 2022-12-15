@@ -39,8 +39,12 @@ public interface Loginchallengehomefooter
     @JsonProperty("aplication_refresh")
     String getAplication_refresh();
 
+    String getSearch_button_url();
+
     @JsonProperty("search_button")
     String getSearch_button();
+
+    String getLogout_button_url();
 
     @JsonProperty("logout_button")
     String getLogout_button();

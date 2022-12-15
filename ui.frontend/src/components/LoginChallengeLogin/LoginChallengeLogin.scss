@@ -1,17 +1,19 @@
-.login-container{
+.login-container {
 
-  .login-content-info{
+  .login-content-info {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
     background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
-    box-shadow: 4px 4px 70px rgb(0 0 0 / 25%);    
-    .login-content-info-wrapper{
+    box-shadow: 4px 4px 70px rgb(0 0 0 / 25%);
+
+    .login-content-info-wrapper {
       max-width: 379px;
       background: transparent;
-      .login-title{
-        h1{
+
+      .login-title {
+        h1 {
           font-family: 'Poppins';
           font-style: normal;
           font-weight: 400;
@@ -20,7 +22,8 @@
           color: #E0E0E0;
           margin: 0;
         }
-        h2{
+
+        h2 {
           font-family: 'Poppins';
           font-style: normal;
           font-weight: 400;
@@ -30,9 +33,11 @@
           margin: 0 0 135px 0;
         }
       }
-      .login-form{
+
+      .login-form {
         display: grid;
-        span{
+
+        span {
           font-family: 'Poppins';
           font-style: normal;
           font-weight: 400;
@@ -41,31 +46,53 @@
           color: #E0E0E0;
           margin-bottom: 25px;
         }
+
+        .login-error {
+          max-width: 379px;
+          justify-content: center;
+          display: flex;
+
+          span {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            width: 283px;
+            color: #E9B425;
+          }
+        }
+
       }
-      input{
+
+      input {
         background: transparent;
         margin-bottom: 33px;
         border: 1px solid #FFFFFF;
         height: 60px;
         border-radius: 50px;
       }
-      input::placeholder, input[type=text], input[type=password] {
+
+      input::placeholder,
+      input[type=text],
+      input[type=password] {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color:#E0E0E0;
+        color: #E0E0E0;
         padding: 0 20px;
-    }
-    
-      Button{
+      }
+
+      Button {
         margin-top: 82px;
       }
     }
   }
 
-  .login-content-img{
+  .login-content-img {
     width: 50%;
     height: 100vh;
     background-size: cover;
@@ -74,11 +101,12 @@
 
   //mobile
   @media (max-width: 768px) {
-    .login-content-info{
+    .login-content-info {
       width: 100%;
       height: 100vh;
     }
-    .login-content-img{
+
+    .login-content-img {
       display: none;
     }
   }

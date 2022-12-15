@@ -20,9 +20,11 @@
   line-height: 27px;
 }
 .loginchallenge-button--secondary {
-  color: #333;
-  background-color: transparent;
+  color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  background: linear-gradient(90deg, #0487FF 0%, #1665C1 100%);
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
 }
 .loginchallenge-button--small {
   font-size: 12px;

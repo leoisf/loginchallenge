@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import Button from "../Button/Button";
 import Input from "../Input/Input";
+import { Container } from '../Container/Container';
 
 type SearchBarProps = {
   onFormSubmit: (searchTerm: string) => void;
@@ -19,25 +20,19 @@ const SearchBar = ({ onFormSubmit }:SearchBarProps): JSX.Element => {
     onFormSubmit(searchTerm);
   };
 
-  return (
-    <form
-      onSubmit={(event) => handleFormSubmit(event)}
-    >
-      <div>
-        <Input
-          onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+  return ( 
+    <Container flex className="search-page-search-bar">
+      <form onSubmit={(event) => handleFormSubmit(event)} >
+        <Input onChange={(          
+            event: React.ChangeEvent<HTMLInputElement>) =>
             onInputChange(event)
           }
           value={searchTerm}
-          placeholder="Search for GitHub user"
+          placeholder="Ex.:Thauany"
         />
-      </div>
-      <div
-      >
-        <Button  primary label="search" type="submit">
-        </Button>
-      </div>
+        <Button primary label="Buscar" type="submit"> </Button>
     </form>
+    </Container>
   );
 };
 

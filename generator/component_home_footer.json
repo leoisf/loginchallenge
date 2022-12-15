@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.loginchallenge.core.models",
     "model-impl-pkg": "com.loginchallenge.core.models.impl"
   },
-  "name": "loginchallengelogin",
-  "title": "Login Challenge Login Page",
+  "name": "loginchallengehomefooter",
+  "title": "Login Challenge Home Footer",
   "group": "Login Challenge - Content",
   "type": "components",
   "options": {
@@ -29,42 +29,51 @@
     "generic-javadoc": false,
     "properties": [
       {
-        "field": "title",
+        "field": "section_msg",
         "type": "textfield",
         "json-expose": true,
         "json-property": "text",
-        "label": "Title Page"
+        "label": "Section message"
       },
       {
-        "field": "sub_title",
+        "field": "aplication_refresh",
         "type": "textfield",
         "json-expose": true,
         "json-property": "text",
-        "label": "Sub Title text"
+        "label": "Aplication refresh text"
       },
       {
-        "field": "button",
-        "type": "textfield",
-        "json-expose": true,
-        "json-property": "text",
-        "label": "Button text"
-      },
-      {
-        "field": "button_url",
+        "field": "search_button_url",
         "type": "pathfield",
         "json-expose": true,
         "attributes": {
             "rootPath": "content/"
         },
-        "label": "Button URL"
+        "label": "Search button URL"
       },
       {
-        "field": "image",
-        "type": "image",
+        "field": "search_button",
+        "type": "textfield",
         "json-expose": true,
-        "label": "Template Image"
-      }
-      
+        "json-property": "text",
+        "label": "Search button text"
+      },
+      {
+        "field": "logout_button_url",
+        "type": "pathfield",
+        "json-expose": true,
+        "attributes": {
+            "rootPath": "content/"
+        },
+        "label": "Logout button URL"
+      },
+      {
+        "field": "logout_button",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "text",
+        "label": "Logout button text"
+      }      
     ]
   }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "../Container/Container";
 
 type Props = {
   avatar: string;
@@ -7,7 +8,9 @@ type Props = {
 
 const Avatar: React.FunctionComponent<Props> = ({ avatar, alt }) => {
   return (
-    <img className="md:h-56 h-64" src={avatar} alt={alt} data-testid="avatar" />
+    <Container flex className="git-users-search-card-img"> 
+      <img src={avatar} alt={alt} width="93" height="93"/>
+    </Container>
   );
 };
 

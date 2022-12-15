@@ -49,6 +49,8 @@ public class LoginchallengeloginImpl
     private String sub_title;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String button;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String button_url;
     @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Image image;
     @SlingObject
@@ -67,9 +69,14 @@ public class LoginchallengeloginImpl
     }
 
     @Override
-    @JsonProperty("button")
+    @JsonProperty("text")
     public String getButton() {
         return button;
+    }
+
+    @Override
+    public String getButton_url() {
+        return button_url;
     }
 
     @Override

@@ -1,36 +1,50 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 import Avatar from "../Avatar/Avatar";
+import { Container } from "../Container/Container";
+import {GitUser, GitUserInfo} from "../../types/Types"
+import axios from 'axios';
+import Button from "../Button/Button";
 
-export type User = {
-  html_url: string;
-  avatar_url: string;
-  login: string;
-  id: number;
-};
 
-type Props = {
-  user: User;
-};
+export interface UserCardProps {
+  users: GitUser;
+}
 
-const UserCard: React.FunctionComponent<Props> = ({ user }) => {
+const UserCard = ({
+  users
+}: UserCardProps ): JSX.Element => { 
+
+  const [usersInfo, setusersInfo] = useState({} as GitUserInfo);
+
+  const getGitUsersInfo = useCallback(async (user: GitUser) => {
+     try{
+        let res = await axios.get(user.url);
+        setusersInfo(await res.data);
+        console.log(res.data);
+     }catch(e){
+        console.log(e);
+     }
+  }, []);
+
+  useEffect(()=> {
+     users && getGitUsersInfo(users);      
+  }, []);
+
   return (
-    <a
-      className=""
-      target="_blank"
-      rel="noopener noreferrer"
-      href={user.html_url}
-    >
-      <Avatar avatar={user.avatar_url} alt={user.login} />
-      <div className="">
-        <div
-          className=""
-        >
-          {user.login}
-        </div>
-      </div>
-    </a>
-  );
-};
+    <Container className="git-users-search-card">
+      <Container flex>
+          <Avatar avatar={users.avatar_url} alt={users.login} />
+          <Container className="git-users-search-card-info">
+            <Container className="git-users-search-card-info-name">{usersInfo.name}</Container>
+            <Container className="git-users-search-card-info-description">{usersInfo.bio}</Container>
+          </Container>
+      </Container>
+      <Container flex justify_content="right">
+          <Button size="small" label="Ver mais" type="button"> </Button>
+      </Container>
+  </Container>
+  )
+}
 
 export default UserCard;

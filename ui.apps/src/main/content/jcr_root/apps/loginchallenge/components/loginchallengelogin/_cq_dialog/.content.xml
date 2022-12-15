@@ -48,6 +48,12 @@
                        jcr:primaryType="nt:unstructured"
                        name="./button"
                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <button_url cq-msm-lockable="./button_url"
+                           fieldLabel="Button URL"
+                           jcr:primaryType="nt:unstructured"
+                           name="./button_url"
+                           rootPath="content/"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
                <imageResType jcr:primaryType="nt:unstructured"
                              name="./image/sling:resourceType"
                              sling:resourceType="granite/ui/components/coral/foundation/form/hidden"

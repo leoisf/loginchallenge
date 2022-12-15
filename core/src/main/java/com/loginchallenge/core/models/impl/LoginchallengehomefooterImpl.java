@@ -46,7 +46,11 @@ public class LoginchallengehomefooterImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String aplication_refresh;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String search_button_url;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String search_button;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String logout_button_url;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String logout_button;
     @SlingObject
@@ -65,9 +69,19 @@ public class LoginchallengehomefooterImpl
     }
 
     @Override
+    public String getSearch_button_url() {
+        return search_button_url;
+    }
+
+    @Override
     @JsonProperty("search_button")
     public String getSearch_button() {
         return search_button;
+    }
+
+    @Override
+    public String getLogout_button_url() {
+        return logout_button_url;
     }
 
     @Override

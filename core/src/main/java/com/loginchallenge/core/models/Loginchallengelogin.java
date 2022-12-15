@@ -32,6 +32,8 @@ import org.osgi.annotation.versioning.ConsumerType;
 public interface Loginchallengelogin
     extends ComponentExporter
 {
+
+
     @JsonProperty("title")
     String getTitle();
 
@@ -40,6 +42,8 @@ public interface Loginchallengelogin
 
     @JsonProperty("button")
     String getButton();
+
+    String getButton_url();
 
     Image getImage();
 

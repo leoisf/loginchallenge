@@ -13,6 +13,11 @@ type ClockProps = {
   React.useEffect(() => {
    counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
   }, [counter]);
+  if (counter === 0) {
+    window.location.replace(
+      "/content/loginchallenge/us/en/login-challange-login-page.html"
+    );
+  }
 
   return (
     <Container className="counter-container">
