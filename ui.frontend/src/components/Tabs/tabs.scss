@@ -1,0 +1,110 @@
+.git-users-repo-container-tab {
+  width: 400px;
+  height: 250px;
+  background: #2B2B2B;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.tab-list {
+  height: 50px;
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  span{
+    margin: 2px;
+    background: #454545;
+    border-radius: 46px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+  }
+}
+
+.tabs {
+  background: #2B2B2B;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.tabs:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.active-tabs {
+
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  width: 145px;
+  height: 0px;
+  border: 2px solid rgba(159, 159, 159, 0.7);
+}
+
+.content {
+    display: none;
+    padding: 10px;
+}
+
+.active-content {
+    background: #2B2B2B;
+    display: flex;
+    .git-users-repo-card{
+      width: 982px;
+      height: 110px;
+      border-bottom: 1px solid rgba(159, 159, 159, 0.7);
+      margin: 24px;
+      span{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+      }
+      p{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #8D8D8D;
+      }
+      .git-users-repo-card-buttons {
+        align-items: center;
+        Button {
+          margin: 0;
+          width: 208px;
+          height: 47px;
+      }
+      img {
+        margin-right: 24px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.active-content {
+  display: flex;
+
+}

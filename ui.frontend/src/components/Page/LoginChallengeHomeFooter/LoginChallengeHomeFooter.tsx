@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
-import { Container } from '../Container/Container';
-import Counter from "../Counter/Counter";
+import { Container } from '../../Container/Container';
+import Counter from "../../Counter/Counter";
 import "./LoginChallengeHomeFooter.scss"
-import Button from '../Button/Button';
+import Button from '../../Button/Button';
 
 export interface LoginChallengeHomeFooterProps {
    children: React.ReactNode

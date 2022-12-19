@@ -1,7 +1,7 @@
 import React  from "react"
-import { Container } from '../Container/Container';
-import GitUsersSearch from "../GitUsersSearch/GitUsersSearch";
-import { GlobalStyle } from "../GlobalStyle/GlobalStyle";
+import { Container } from '../../Container/Container';
+import GitUsersSearch from "../../GitUsersSearch/GitUsersSearch";
+import { GlobalStyle } from "../../GlobalStyle/GlobalStyle";
 import './LoginChallengeSearchPage.scss';
 export interface LoginChallengeSearchPageProps { 
    title_page: string

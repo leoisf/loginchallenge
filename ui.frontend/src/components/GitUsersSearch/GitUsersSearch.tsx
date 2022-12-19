@@ -28,8 +28,6 @@ export interface GitUsersSearchProps {
          console.log(res.data.items);
       }catch(e){
          console.log(e);
-      }finally{
-         console.log('fechou!!!');
       }
       
    }, [searchTerm]);
@@ -48,7 +46,7 @@ export interface GitUsersSearchProps {
       <SearchBar onFormSubmit={handleSearch} />
          <Container  className="git-users-search-content" >
             {users?.map((user: GitUser) => {
-               return <UserCard key={user.id} users={user} />;
+               return <UserCard key={user.id} user={user} />;
             })}
          </Container>
       </Container>

@@ -15,8 +15,7 @@ const UserCard = ({
   user
 }: UserCardProps ): JSX.Element => { 
 
-  const [usersInfo, setusersInfo] = useState({}as GitUser) 
-    ;
+  const [usersInfo, setusersInfo] = useState({}as GitUser);
 
   const getGitUsersInfo = useCallback(async (user: GitUser) => {
      try{

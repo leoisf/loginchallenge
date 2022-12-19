@@ -1,9 +1,6 @@
 import React from "react";
 import './container.scss';
 
-import ima from "../assets/image2.png"
-
-
 interface ContainerProps {
     children: React.ReactNode;
     flex?: boolean;

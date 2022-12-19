@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
-import Clock from "../Clock/Clock";
-import { Container } from '../Container/Container';
-import { GlobalStyle } from "../GlobalStyle/GlobalStyle";
-import Weather from "../Weather/Weather";
+import Clock from "../../Clock/Clock";
+import { Container } from '../../Container/Container';
+import { GlobalStyle } from "../../GlobalStyle/GlobalStyle";
+import Weather from "../../Weather/Weather";
 import "./LoginChallengeHomeHeader.scss"
 
 export interface LoginChallengeHomeHeaderProps {

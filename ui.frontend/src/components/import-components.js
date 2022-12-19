@@ -49,7 +49,7 @@ import LoginChallengeLogin from './LoginChallengeLogin/LoginChallengeLogin';
 import LoginChallengeHomeHeader from './LoginChallengeHomeHeader/LoginChallengeHomeHeader';
 import LoginChallengeHomeFooter from './LoginChallengeHomeFooter/LoginChallengeHomeFooter';
 import LoginChallengeSearchPage from './LoginChallengeSearchPage/LoginChallengeSearchPage';
-import LoginChallengeGitUserPage from './LoginChallengeGitUserPage/LoginChallengeGitUserPage';
+import LoginChallengeGitUserPage from './Page/LoginChallengeGitUserPage/LoginChallengeGitUserPage';
 
 
 //lazyload / code splitting example of an internal component
@@ -60,7 +60,7 @@ const loginChallengeLogin = withAsyncImport(() => import('./LoginChallengeLogin/
 const loginChallengeHomeHeader = withAsyncImport(() => import(`./LoginChallengeHomeHeader/LoginChallengeHomeHeader`));
 const loginChallengeHomeFooter = withAsyncImport(() => import(`./LoginChallengeHomeFooter/LoginChallengeHomeFooter`));
 const loginChallengeSearchPage = withAsyncImport(() => import('./LoginChallengeSearchPage/LoginChallengeSearchPage'));
-const loginChallengeGitUserPage = withAsyncImport(() => import('./LoginChallengeGitUserPage/LoginChallengeGitUserPage'));
+const loginChallengeGitUserPage = withAsyncImport(() => import('./Page/LoginChallengeGitUserPage/LoginChallengeGitUserPage'));
 
 //lazyload / code splitting examples of external components
 const TitleV2 = withAsyncImport(() => import(`@adobe/aem-core-components-react-base/dist/authoring/title/v2/TitleV2`));

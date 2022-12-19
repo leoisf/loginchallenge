@@ -1,8 +1,8 @@
 import React, { useState }  from "react"
-import { Container } from "../Container/Container";
-import { Button } from '../Button/Button';
-import { GlobalStyle } from "../GlobalStyle/GlobalStyle";
-import Input from "../Input/Input";
+import { Container } from "../../Container/Container";
+import { Button } from '../../Button/Button';
+import { GlobalStyle } from "../../GlobalStyle/GlobalStyle";
+import Input from "../../Input/Input";
 import './LoginChallengeLogin.scss';
 
 

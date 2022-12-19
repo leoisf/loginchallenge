@@ -1,0 +1,167 @@
+.git-user-page-container {
+  background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+  box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+
+  .git-user-page-content-info {
+    display: flex;
+    width: 1608px;
+    height: 814px;
+    background: #242424;
+    border-radius: 8px;
+
+    .git-user-page-content-info-wrapper {
+      margin: 0;
+      width: 100%;
+
+      Button{
+        margin: 24px 24px 0 0;
+      };
+
+    .git-user-personal-info{
+      width: 286px;
+      height: 420px;
+      .git-user-personal-info-avatar{
+        img{
+          border-radius: 50%;
+        }
+      }
+
+      .git-user-personal-info-name {
+        h1 {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 39px;
+          color: #E0E0E0;
+        }
+      }
+      .git-user-personal-info-bio {
+        h2 {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          color: #8D8D8D;
+        }
+      }
+      
+    }
+
+  
+      .git-users-search-conteiner {
+        .search-page-search-bar{
+           input {
+              width: 693px;
+              height: 60px;
+              background: transparent;
+              background: #26292C;
+              border: 1px solid #FFFFFF;
+              border-radius: 50px;
+              border-radius: 50px;
+            }
+            input::placeholder,
+            input[type=text] {
+              font-family: 'Poppins';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: #E0E0E0;
+              padding: 0 20px;
+            }
+            Button {
+              box-sizing: border-box;
+              width: 200px;
+              height: 67px;
+              box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+              border-radius: 50px;
+              margin-left: 30px;
+              font-family: 'Poppins';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 27px;
+            }
+        }
+
+        .git-users-search-content{
+          .git-users-search-card{
+            background: #26292C;
+            border: 1px solid #AAAAAA;
+            border-radius: 8px;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            margin: 20px 0;
+            padding: 0 45px 0 33px;
+            align-items: center;
+            width: 880px;
+            height: 159px;
+            .git-users-search-card-img{
+              margin-right: 20px;
+              img{
+                border-radius: 50%;
+              }
+            }
+            .git-users-search-card-info{
+              display: flex;
+              flex-direction: column;
+              .git-users-search-card-info-name{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 27px;
+                color: #E0E0E0;
+              }
+              .git-users-search-card-info-description{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #E0E0E0;
+              }              
+            }
+            Button {
+              padding: 10px 32px;
+              width: 149px;
+              height: 47px;
+            }
+          }
+        }
+
+
+        
+
+      }
+
+    }
+  }
+
+  .search-page-content-img {
+    width: 25%;
+    height: 100vh;
+    background-size: cover;
+    background-position-x: center;
+  }
+
+  //mobile
+  @media (max-width: 768px) {
+    .search-page-content-info {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .login-content-img {
+      display: none;
+    }
+  }
+}

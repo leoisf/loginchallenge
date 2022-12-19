@@ -4,10 +4,15 @@ export type GitUser = {
     login: string;
     id: number;
     url: string;
-  };
-
-  export type GitUserInfo = {
     name: string;
     bio: string;
     repos_url: string;
+  };
+
+  export type UserRepo = {
+    id: string
+    name: string
+    html_url: string
+    isFavorite: boolean
+    description: string
   };

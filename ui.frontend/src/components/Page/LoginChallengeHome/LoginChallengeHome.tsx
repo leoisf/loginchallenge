@@ -1,6 +1,6 @@
 import React  from "react"
-import { Container } from '../Container/Container';
-import { GlobalStyle } from '../GlobalStyle/GlobalStyle';
+import { Container } from '../../Container/Container';
+import { GlobalStyle } from '../../GlobalStyle/GlobalStyle';
 import './LoginChallengeHome.scss';
 import LoginChallengeHomeHeader from '../LoginChallengeHomeHeader/LoginChallengeHomeHeader';
 import LoginChallengeHomeFooter from '../LoginChallengeHomeFooter/LoginChallengeHomeFooter';
